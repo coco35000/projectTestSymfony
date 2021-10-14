@@ -54,7 +54,7 @@ class APIMenuAddCMSController extends AbstractController
         //Code dans la méthode du Controller
         $structureControllerForView .= "\t\t \$repository = \$this->getDoctrine()->getRepository(Langues::class); \n";
         $structureControllerForView .= "\t\t \$categories = \$repository->findAll(); \n";
-        $structureControllerForView .= "\t\t return \$this->render('" . $dataNamePage . ".html.twig', ['categories' => \$categories])";
+        $structureControllerForView .= "\t\t return \$this->render('" . $dataNamePage . ".html.twig', ['categories' => \$categories]);";
 
         //Fin du fichier.
         $structureControllerForView .= "\n \t } \n }";

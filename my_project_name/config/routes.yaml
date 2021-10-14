@@ -17,7 +17,7 @@ cms_gestionMenuAdd:
 
 cms_gestionArticles:
   path: /gestion/articles
-  controller: App\Controller\MenuArticlesController::index
+  controller: App\Controller\MenuArticlesCMSController::index
 
 
 
