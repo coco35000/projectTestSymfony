@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <title>Accueil</title>
+    </head>
+
+    <body>
+    <nav>
+        <ul>
+            {% if categories is not empty %}
+                {% for categorie in categories %}
+                    <li>
+                        <a href="{{ path(categorie.menu | lower) }}">{{ categorie.menu }}</a>
+                    </li>
+                {% endfor %}
+            {% endif %}
+        </ul>
+    </nav>
+
+    <main>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="{{ asset('javascript/main.js') }}" defer></script>
+</body>
+</html>

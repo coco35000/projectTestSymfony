@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="http://127.0.0.1:8000">Retour au site</a>
+
+        <div>
+            <label>
+                Recherche :
+                <input type="text" />
+            </label>
+
+            <button>OK</button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="http://127.0.0.1:8000/gestion">ACCUEIL</a>
+            </li>
+
+            <li>
+                <a href="http://127.0.0.1:8000/gestion/menu">MENU</a>
+            </li>
+
+            <li>
+                <a href="http://127.0.0.1:8000/gestion">ARTICLES TEXTE</a>
+            </li>
+
+            <li>
+                <a href="http://127.0.0.1:8000/gestion">DIAPORAMA</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 style="text-align: center">Ajouter une page</h1>
+
+        <div id="infoContent">
+
+        </div>
+
+        <div style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: 50px; width: 50%;">
+            <label>
+                Titre page :
+                <input id="inputNamePage" type="text" />
+            </label> <br />
+
+            <div id="editor">
+
+            </div>
+
+            <div style="margin-top: 25px;">
+                <label>
+                    Url Réécrite :
+                    <input id="inputURLRewriting" type="text" />
+                </label>
+
+                <a class="btn" id="savePage" href="http://127.0.0.1:8000/gestion/menu/add">Enregistrer</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p> 9.0 / © 2021 ATOUTGRAPH</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
+    <script src="{{ asset('javascript/main.js') }}" defer></script>
+    <script src="{{ asset('javascript/ckeditor.js') }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Back-end for WebWiews
+index:
+  path: /
+  controller: App\Controller\IndexController::index
+
+cms_index:
+  path: /gestion
+  controller: App\Controller\IndexCMSController::index
+
+cms_gestionmenu:
+  path: /gestion/menu
+  controller: App\Controller\MenuCMSController::index
+
+cms_gestionMenuAdd:
+  path: /gestion/menu/add
+  controller: App\Controller\MenuAddCMSController::index
+
+cms_gestionArticles:
+  path: /gestion/articles
+  controller: App\Controller\MenuArticlesController::index
+
+
+
+# Back-end for API
+cms_createpage:
+  path: /gestion/createpage
+  controller: App\Controller\APIMenuAddCMSController::index
